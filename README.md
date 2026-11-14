@@ -20,4 +20,3 @@ Open http://localhost:3000.
 Open http://localhost:3000/print in Chrome, press Cmd/Ctrl+P, choose **Save as PDF**, set Margins to **None**, tick **Background graphics**, and save: you get one 16:9 slide per page.
 
 Images live in `public/images/`. Slide content is in `components/slides.tsx`.
-# iot-final-project-slides

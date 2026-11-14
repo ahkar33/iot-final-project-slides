@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #1a1d21;
+  --color-paper: #f7f5f2;
+  --color-safe: #2e9e5b;
+  --color-warn: #f2a900;
+  --color-danger: #d64545;
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* Every slide is authored on a fixed 1920x1080 canvas. */
+.slide {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* PDF export (/print): one slide per page, backgrounds kept. */
+@page {
+  size: 1920px 1080px;
+  margin: 0;
+}
+
+.print-root .slide {
+  page-break-after: always;
+  break-after: page;
+}
+
+.print-root .slide:last-child {
+  page-break-after: auto;
+  break-after: auto;
+}
+
+@media print {
+  html,
+  body {
+    background: #1a1d21;
+  }
+}

@@ -495,11 +495,7 @@ function EdgeLogicSlide() {
   return (
     <Content
       eyebrow="05 · Smart edge logic"
-      title={
-        <>
-          Statistical AI <span className="text-charcoal/35">(Option A)</span>
-        </>
-      }
+      title="Statistical"
       active="warn"
     >
       <div className="grid flex-1 grid-cols-4 gap-[36px]">
